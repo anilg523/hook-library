@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="സോഷ്യൽ മീഡിയ കണ്ടന്റ് സൃഷ്ടിക്കാൻ 25 തരം ഹുക്കുകൾ — മലയാളം ഉദാഹരണങ്ങളോടെ.">
+<title>ഹുക്ക് ലൈബ്രറി | Social Media Hooks</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#5e687b;--accent:#165dba;--line:#e3e8f0;--soft:#eaf2ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Malayalam",sans-serif;line-height:1.65}
+header{background:linear-gradient(130deg,#102d55,#1767b5);color:#fff;padding:42px 18px 34px}
+.wrap{max-width:1050px;margin:auto;padding:0 18px}.eyebrow{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;margin:10px 0}header p{max-width:720px;color:#e8f1ff;margin:12px 0 0}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 16px}
+input,select{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+input{flex:1;min-width:220px}select{min-width:190px}
+.intro{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:20px 0}
+.intro strong{color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;margin:18px 0 36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 3px 14px #1b355008}
+.card h2{font-size:1.08rem;margin:0 0 8px;display:flex;gap:9px;align-items:flex-start}
+.num{display:inline-grid;place-items:center;flex:0 0 30px;height:30px;border-radius:9px;background:var(--soft);color:var(--accent);font-weight:750}
+.card p{margin:8px 0;color:var(--muted);font-size:.94rem}.example{background:#f7f9fc;border-left:3px solid var(--accent);padding:10px 12px;border-radius:8px;margin:10px 0;font-weight:600}
+.copy{border:0;border-radius:9px;background:var(--soft);color:#104c98;padding:8px 12px;font:inherit;font-size:.88rem;cursor:pointer}
+.copy:hover{background:#dceaff}.tag{font-size:.76rem;color:#53647b;background:#f0f3f8;border-radius:20px;padding:3px 9px;display:inline-block}
+section h2{font-size:1.45rem;margin:28px 0 8px}footer{padding:24px 0 42px;color:var(--muted);font-size:.9rem}
+.empty{display:none;background:white;padding:22px;border-radius:12px;color:var(--muted)}
+@media(max-width:560px){header{padding-top:30px}.controls{display:grid}.controls>*{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Content creator toolkit · മലയാളം + English</div>
+<h1>ഹുക്ക് ലൈബ്രറി</h1>
+<p>സ്ക്രോൾ നിർത്തി ശ്രദ്ധ പിടിച്ചുപറ്റുന്ന സോഷ്യൽ മീഡിയ തുടക്കങ്ങൾ. Instagram Reels, YouTube Shorts, Facebook വീഡിയോകൾ, പോസ്റ്റുകൾ എന്നിവയ്ക്കായി 25 തരം ഹുക്കുകളും ഉദാഹരണങ്ങളും.</p>
+</div></header>
+<main class="wrap">
+<div class="intro"><strong>എന്താണ് Hook?</strong><br>ഒരു വീഡിയോയുടെയോ പോസ്റ്റിന്റെയോ തുടക്കത്തിൽ പ്രേക്ഷകന്റെ ശ്രദ്ധ പിടിച്ചുപറ്റുന്ന വാക്ക്, ചോദ്യം, ദൃശ്യം, ശബ്ദം അല്ലെങ്കിൽ പ്രവൃത്തി. ലക്ഷ്യം: സ്ക്രോളിംഗ് നിർത്തിക്കുക, കൗതുകം സൃഷ്ടിക്കുക, തുടർന്നു കാണാൻ പ്രേരിപ്പിക്കുക.</div>
+<div class="controls">
+<input id="search" type="search" placeholder="ഹുക്ക് തിരയുക… ഉദാ: ചോദ്യം, ശാസ്ത്രം, challenge" aria-label="ഹുക്ക് തിരയുക">
+<select id="category" aria-label="വിഭാഗം തിരഞ്ഞെടുക്കുക"><option value="all">എല്ലാ ഹുക്കുകളും</option><option value="question">ചോദ്യവും കൗതുകവും</option><option value="story">കഥയും വികാരവും</option><option value="value">വിവരവും പ്രയോജനവും</option><option value="visual">ദൃശ്യവും പ്രവർത്തിയും</option><option value="engage">പങ്കാളിത്തവും ട്രെൻഡും</option></select>
+</div>
+<div id="count" aria-live="polite"></div>
+<div class="grid" id="cards">
+<article class="card" data-cat="question"><h2><span class="num">1</span>കൗതുക ഹുക്ക് · Curiosity</h2><p>ഉത്തരം അറിയാനുള്ള ആകാംക്ഷ സൃഷ്ടിക്കുക.</p><div class="example">“ഇതിന്റെ പിന്നിലെ രഹസ്യം നിങ്ങൾക്കറിയാമോ?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="question"><h2><span class="num">2</span>ചോദ്യ ഹുക്ക് · Question</h2><p>ചിന്തിപ്പിക്കുന്ന ഒരു ചോദ്യം കൊണ്ട് തുടങ്ങുക.</p><div class="example">“ഭൂമി കറങ്ങുന്നത് പെട്ടെന്ന് നിർത്തിയാൽ എന്ത് സംഭവിക്കും?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">3</span>അതിശയിപ്പിക്കുന്ന വസ്തുത · Shocking fact</h2><p>വിശ്വസിക്കാൻ പ്രയാസമുള്ള, പക്ഷേ പരിശോധിക്കാവുന്ന വസ്തുത.</p><div class="example">“ശുക്രനിൽ ഒരു ദിവസം അവിടത്തെ ഒരു വർഷത്തേക്കാൾ ദൈർഘ്യമേറിയതാണ്!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">4</span>പ്രശ്നം–പരിഹാരം · Problem–solution</h2><p>പ്രേക്ഷകന്റെ പ്രശ്നം ചൂണ്ടിക്കാട്ടി പരിഹാരം വാഗ്ദാനം ചെയ്യുക.</p><div class="example">“പഠിച്ചത് ഓർമ്മിക്കാൻ ബുദ്ധിമുട്ടുണ്ടോ? ഈ രീതി പരീക്ഷിക്കൂ.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="question"><h2><span class="num">5</span>വിവാദ / അഭിപ്രായ ഹുക്ക് · Contrarian</h2><p>പൊതുവായ ധാരണയെ മാന്യമായി ചോദ്യം ചെയ്യുക.</p><div class="example">“മാർക്ക് മാത്രം ഒരാളുടെ കഴിവ് അളക്കുമോ?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="story"><h2><span class="num">6</span>കഥപറച്ചിൽ · Storytelling</h2><p>ഒരു സംഭവത്തിന്റെ നടുവിൽ നിന്നോ കൗതുകകരമായ അനുഭവത്തിൽ നിന്നോ തുടങ്ങുക.</p><div class="example">“ഒരു ചെറിയ ചോദ്യം ഈ വിദ്യാർത്ഥിയുടെ ജീവിതം മാറ്റി.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">7</span>മുന്നറിയിപ്പ് · Negative / Warning</h2><p>ഒഴിവാക്കേണ്ട പിഴവോ അപകടമോ ചൂണ്ടിക്കാണിക്കുക.</p><div class="example">“ഈ WhatsApp സന്ദേശം പരിശോധിക്കാതെ ഷെയർ ചെയ്യരുത്!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">8</span>പട്ടിക ഹുക്ക് · List</h2><p>നിശ്ചിത എണ്ണം കാര്യങ്ങൾ പങ്കുവെക്കുമെന്ന് പറയുക.</p><div class="example">“ഓരോ അധ്യാപകനും അറിയേണ്ട 5 സൗജന്യ AI ടൂളുകൾ.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">9</span>വെല്ലുവിളി · Challenge</h2><p>പ്രേക്ഷകരെ പരീക്ഷിക്കാനോ പങ്കെടുക്കാനോ ക്ഷണിക്കുക.</p><div class="example">“10 സെക്കൻഡിനുള്ളിൽ ഈ ചോദ്യം പരിഹരിക്കാമോ?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="question"><h2><span class="num">10</span>രഹസ്യ / അപൂർവ അറിവ് · Secret</h2><p>പലർക്കും അറിയാത്ത അറിവ് പങ്കിടാനുള്ള സൂചന നൽകുക.</p><div class="example">“ഈ ലളിതമായ പഠനരീതി പലർക്കും അറിയില്ല.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">11</span>നേരിട്ട് അഭിസംബോധന · Direct address</h2><p>ഒരു പ്രത്യേക വിഭാഗത്തെ വിളിച്ചുകൊണ്ട് തുടങ്ങുക.</p><div class="example">“അധ്യാപകരേ, ഈ വീഡിയോ നിങ്ങൾക്കുള്ളതാണ്!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">12</span>പ്രയോജന ഹുക്ക് · Benefit</h2><p>കണ്ടാൽ ലഭിക്കുന്ന നേട്ടം തുടക്കത്തിൽ വ്യക്തമാക്കുക.</p><div class="example">“30 സെക്കൻഡിൽ വൈദ്യുത സർക്യൂട്ട് മനസ്സിലാക്കാം.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">13</span>മിഥ്യാധാരണ പൊളിക്കൽ · Myth-busting</h2><p>പ്രചാരത്തിലുള്ള തെറ്റായ ധാരണ പരിശോധിക്കുക.</p><div class="example">“മനുഷ്യർ തലച്ചോറിന്റെ 10% മാത്രമേ ഉപയോഗിക്കുന്നുള്ളൂ എന്നത് ശരിയാണോ?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="question"><h2><span class="num">14</span>താരതമ്യ ഹുക്ക് · Comparison</h2><p>രണ്ട് ആശയങ്ങളെയോ രീതികളെയോ താരതമ്യം ചെയ്യുക.</p><div class="example">“പരമ്പരാഗത പഠനമോ AI സഹായത്തോടെയുള്ള പഠനമോ — ഏതാണ് മികച്ചത്?”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="visual"><h2><span class="num">15</span>മുമ്പും ശേഷവും · Before & after</h2><p>മാറ്റം ദൃശ്യമായി കാണിക്കുക.</p><div class="example">“ഈ ക്ലാസ് മുറിയുടെ മാറ്റം ഒന്നു കണ്ടുനോക്കൂ!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="visual"><h2><span class="num">16</span>ദൃശ്യ ഹുക്ക് · Visual</h2><p>വാക്കുകളില്ലാതെ തന്നെ കൗതുകകരമായ ദൃശ്യം അല്ലെങ്കിൽ പ്രവൃത്തി കാണിക്കുക.</p><div class="example">വീഡിയോ തുടങ്ങുമ്പോൾ വെള്ളത്തിൽ പെൻസിൽ വളഞ്ഞതായി തോന്നുന്ന പരീക്ഷണം കാണിക്കുക.</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="story"><h2><span class="num">17</span>POV ഹുക്ക് · Point of view</h2><p>പ്രേക്ഷകനെ ഒരു സാഹചര്യത്തിനുള്ളിൽ നിർത്തുക.</p><div class="example">“POV: ടീച്ചർ പെട്ടെന്ന് ഒരു കിടിലൻ ചോദ്യവുമായി ക്ലാസിലെത്തുന്നു!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="story"><h2><span class="num">18</span>സാമൂഹിക തെളിവ് · Social proof</h2><p>യഥാർത്ഥ നേട്ടം, പ്രതികരണം, അനുഭവം എന്നിവ കാണിക്കുക.</p><div class="example">“ഈ വിദ്യാർത്ഥികൾ സ്വന്തമായി ഒരു റോബോട്ട് നിർമ്മിച്ചത് എങ്ങനെയെന്ന് കാണൂ.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">19</span>അടിയന്തരത · Urgency</h2><p>ഇപ്പോൾ തന്നെ ശ്രദ്ധിക്കേണ്ട കാര്യം വ്യക്തമാക്കുക.</p><div class="example">“അടുത്ത പരീക്ഷയ്ക്ക് മുമ്പ് ഈ കാര്യം അറിഞ്ഞിരിക്കണം.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">20</span>കൗണ്ട്ഡൗൺ · Countdown</h2><p>സമയം കുറച്ച് പ്രതീക്ഷയും ആവേശവും സൃഷ്ടിക്കുക.</p><div class="example">“3… 2… 1… ഇനി പരീക്ഷണത്തിന്റെ ഫലം കണ്ടോളൂ!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="value"><h2><span class="num">21</span>വിദഗ്ധ / ആധികാരികത · Authority</h2><p>വിശ്വസനീയമായ അറിവോ വിദഗ്ധ വിശദീകരണമോ മുന്നോട്ടുവെക്കുക.</p><div class="example">“ഒരു ഫിസിക്സ് അധ്യാപകൻ എന്ന നിലയിൽ ഇത് ലളിതമായി വിശദീകരിക്കാം.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="visual"><h2><span class="num">22</span>പ്രദർശന ഹുക്ക് · Demonstration</h2><p>ഒരു പരീക്ഷണമോ പ്രവർത്തിയോ ഉടൻ കാണിച്ചുതുടങ്ങുക.</p><div class="example">“ഈ കാന്തം തൊടാതെ ഇരുമ്പുപൊടി നീക്കുന്നത് നോക്കൂ!”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">23</span>പ്രവചനം · Prediction</h2><p>ഫലം എന്തായിരിക്കുമെന്ന് പ്രേക്ഷകരോട് ഊഹിക്കാൻ പറയുക.</p><div class="example">“ഈ വസ്തു വെള്ളത്തിൽ പൊങ്ങുമോ താഴുമോ? ആദ്യം നിങ്ങൾ പ്രവചിക്കൂ.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="engage"><h2><span class="num">24</span>സമയോചിത / ട്രെൻഡ് · Timely / Trending</h2><p>ഇപ്പോഴത്തെ വാർത്ത, ഉത്സവം, ചർച്ച, ട്രെൻഡ് എന്നിവയുമായി ബന്ധിപ്പിക്കുക.</p><div class="example">“ഈ ഓണത്തിന് ആഘോഷങ്ങൾക്കു പിന്നിലെ ശാസ്ത്രവും അറിയാം.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+<article class="card" data-cat="story"><h2><span class="num">25</span>വികാര ഹുക്ക് · Emotional</h2><p>പ്രതീക്ഷ, അനുഭവം, സഹാനുഭൂതി തുടങ്ങിയ വികാരങ്ങളുമായി ബന്ധിപ്പിക്കുക.</p><div class="example">“ഒരു അധ്യാപകന്റെ വാക്ക് ഒരു കുട്ടിയുടെ ജീവിതദിശ മാറ്റിയേക്കാം.”</div><button class="copy">ഉദാഹരണം പകർത്തുക</button></article>
+</div>
+<div class="intro"><h2 style="margin-top:0">മികച്ച 3-സെക്കൻഡ് ഫോർമുല</h2><p><strong>ദൃശ്യം + ചോദ്യം + കൗതുകം</strong></p><ol><li><b>0–1 സെക്കൻഡ്:</b> അതിശയിപ്പിക്കുന്ന ഒരു ദൃശ്യം കാണിക്കുക.</li><li><b>1–2 സെക്കൻഡ്:</b> ചിന്തിപ്പിക്കുന്ന ചോദ്യം ചോദിക്കുക.</li><li><b>2–3 സെക്കൻഡ്:</b> ഉത്തരം അറിയാനുള്ള ആകാംക്ഷ നിലനിർത്തുക.</li></ol><div class="example">“തൊടാതെ തന്നെ ഒരു കാന്തത്തിന് വസ്തുവിനെ ചലിപ്പിക്കാനാകുമോ? നോക്കൂ!”</div></div>
+<div class="intro"><strong>ഓർമ്മിക്കുക:</strong> ശ്രദ്ധ പിടിച്ചുപറ്റുന്ന തുടക്കം മാത്രം പോരാ. ഹുക്ക് നൽകുന്ന വാഗ്ദാനം വീഡിയോയിലെ ഉള്ളടക്കം നിറവേറ്റണം. വ്യാജ അവകാശവാദങ്ങളും തെറ്റിദ്ധരിപ്പിക്കുന്ന കണക്കുകളും ഒഴിവാക്കുക.</div>
+</main>
+<footer><div class="wrap">ഹുക്ക് ലൈബ്രറി · പഠനത്തിനും ഉള്ളടക്ക സൃഷ്ടിക്കും വേണ്ടിയുള്ള മലയാളം സഹായസ്രോതസ്സ്.</div></footer>
+<script>
+const search=document.getElementById('search'),category=document.getElementById('category'),cards=[...document.querySelectorAll('.card')],count=document.getElementById('count');
+function filter(){let q=search.value.trim().toLocaleLowerCase(),cat=category.value,shown=0;cards.forEach(c=>{let ok=(cat==='all'||c.dataset.cat===cat)&&c.innerText.toLocaleLowerCase().includes(q);c.style.display=ok?'':'none';if(ok)shown++});count.textContent=`${shown} ഹുക്കുകൾ കാണിക്കുന്നു`; }
+search.addEventListener('input',filter);category.addEventListener('change',filter);
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{let t=b.parentElement.querySelector('.example').innerText;try{await navigator.clipboard.writeText(t);b.textContent='പകർത്തി ✓';setTimeout(()=>b.textContent='ഉദാഹരണം പകർത്തുക',1400)}catch(e){b.textContent='പകർത്താൻ സാധിച്ചില്ല';}}));
+filter();
+</script>
+</body></html>
